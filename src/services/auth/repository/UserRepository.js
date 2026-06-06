@@ -6,7 +6,7 @@ import { APPLICATION_ROLES } from "../../../shared/constants/roles.js";
  * Mongoose implementation of the UserRepository interface.
  * This class provides methods to interact with the User collection in MongoDB using Mongoose.
  */
-class MongooseUserRepository extends BaseRepository {
+class MongoUserRepository extends BaseRepository {
     constructor() {
         super(User);
     }
@@ -80,4 +80,4 @@ class MongooseUserRepository extends BaseRepository {
         }
     }
 }
-export default new MongooseUserRepository();
+export default new MongoUserRepository();
