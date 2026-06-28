@@ -19,6 +19,7 @@ import analyticsRouter from "./services/analytics/routes/analyticsRoutes.js";
 
 // Initialize Express app
 const app = express();
+app.set('trust proxy', 1);
 
 // Middleware
 app.use(helmet());
